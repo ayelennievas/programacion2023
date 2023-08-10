@@ -23,13 +23,14 @@ import { FooterComponent } from './components/footer/footer.component';
     //api angular material
     MatIconModule,
     MatToolbarModule,
-    MatButtonModule
+    MatButtonModule,
     
   ],
   exports: [
     MatIconModule,
     MatToolbarModule,
-    MatButtonModule
+    MatButtonModule,
+    NavbarComponent
     
   ]
 })
