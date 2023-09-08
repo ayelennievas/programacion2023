@@ -8,6 +8,17 @@ export class AuthService {
   // referenciar Autentificacion de Firebase
   constructor(public auth: AngularFireAuth) { }
 
+  //funcion para el inicio de sesion
+  iniciarSesion(email: string, contrasena:string){
+    return this.auth.signInWithEmailAndPassword(email, contrasena);
+  }
+
+  //
+  cerrarSesion(){
+    //devuelve una promesa vacia
+    return this.auth.signOut();
+  }
+
   // retorna nueva informacion de register
   registrar(nombre: string, contrasena: string) {
   return this.auth.createUserWithEmailAndPassword(nombre, contrasena);
