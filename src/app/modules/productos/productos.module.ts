@@ -22,7 +22,11 @@ import { CabinasuvledComponent } from './pages/cabinasuvled/cabinasuvled.compone
     ProductosRoutingModule
   ],
   exports: [
-    CardComponent
+    CardComponent,
+    CabinasuvledComponent,
+    EsmaltesComponent,
+    DecoracionComponent,
+    ProductosComponent
   ]
 })
 export class ProductosModule { }
